@@ -33,7 +33,6 @@ describe('UserService', () => {
       req.flush(emsg,{status:404, statusText:'Not Found'});
       expect(service.users).toEqual([]);
       expect(service.error).toBeTruthy();
-
   });
 
   
